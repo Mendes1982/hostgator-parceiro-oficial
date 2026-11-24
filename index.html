@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HostGator Brasil - 1 Ano de Domínio Grátis + Até 70% OFF Oficial</title>
+  <meta name="description" content="Aproveite a oferta exclusiva de indicação oficial HostGator. Hospedagem de sites cPanel com até 70% de desconto, 1 ano de domínio grátis e certificado SSL incluído.">
+  <link rel="icon" type="image/x-icon" href="https://www.hostgator.com.br/favicon.ico">
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --hg-navy: #002244;
+      --hg-dark: #001229;
+      --hg-blue: #0066cc;
+      --hg-blue-light: #0284c7;
+      --hg-yellow: #ffc72c;
+      --hg-yellow-hover: #e5b225;
+      --hg-green: #10b981;
+      --hg-gray-bg: #f8fafc;
+      --hg-card-border: #e2e8f0;
+      --hg-text-main: #0f172a;
+      --hg-text-muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: var(--hg-text-main);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    /* TOP NOTIFICATION BAR */
+    .top-bar {
+      background: linear-gradient(90deg, #ffc72c 0%, #f59e0b 100%);
+      color: #001229;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .top-bar .tag {
+      background: #001229;
+      color: #ffc72c;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #001229;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-svg {
+      height: 34px;
+      fill: #ffffff;
+    }
+
+    .partner-badge {
+      background: rgba(255, 199, 44, 0.15);
+      border: 1px solid #ffc72c;
+      color: #ffc72c;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .nav-cta {
+      background-color: var(--hg-yellow);
+      color: #001229;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--hg-yellow-hover);
+      transform: translateY(-1px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: radial-gradient(circle at 80% 20%, #003366 0%, #001229 70%);
+      color: #ffffff;
+      padding: 60px 24px 80px 24px;
+      position: relative;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span.highlight {
+      color: var(--hg-yellow);
+      display: inline-block;
+    }
+
+    .hero p.lead {
+      font-size: 18px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 580px;
+    }
+
+    .hero-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .feature-item svg {
+      width: 18px;
+      height: 18px;
+      fill: #10b981;
+      flex-shrink: 0;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-main-hero {
+      background-color: var(--hg-yellow);
+      color: #001229;
+      font-size: 18px;
+      font-weight: 900;
+      padding: 18px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(255, 199, 44, 0.35);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-main-hero:hover {
+      background-color: var(--hg-yellow-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(255, 199, 44, 0.45);
+    }
+
+    .hero-subtext {
+      font-size: 12px;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero-image-wrap {
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-image-wrap img.snappy-mascot {
+      width: 100%;
+      max-width: 400px;
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* DOMAIN SEARCH BAR (HIGH ENGAGEMENT) */
+    .domain-search-section {
+      background-color: #ffffff;
+      margin-top: -35px;
+      position: relative;
+      z-index: 10;
+      padding: 0 24px;
+    }
+
+    .domain-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px 30px;
+      box-shadow: 0 15px 35px rgba(0, 18, 41, 0.12);
+      border: 1px solid var(--hg-card-border);
+    }
+
+    .domain-card h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--hg-navy);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .domain-form {
+      display: flex;
+      gap: 10px;
+    }
+
+    .domain-input {
+      flex: 1;
+      padding: 16px 20px;
+      font-size: 16px;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .domain-input:focus {
+      border-color: var(--hg-blue);
+    }
+
+    .btn-search {
+      background-color: var(--hg-blue);
+      color: #ffffff;
+      border: none;
+      padding: 0 28px;
+      font-size: 15px;
+      font-weight: 800;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-search:hover {
+      background-color: #0052a3;
+    }
+
+    /* PLANS & PRICING SECTION */
+    .plans-section {
+      padding: 80px 24px;
+      background-color: var(--hg-gray-bg);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+    }
+
+    .section-header h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--hg-navy);
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      font-size: 16px;
+      color: var(--hg-text-muted);
+    }
+
+    .plans-grid {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .plan-card {
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1px solid var(--hg-card-border);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 18, 41, 0.08);
+      border-color: #cbd5e1;
+    }
+
+    .plan-card.featured {
+      border: 2px solid var(--hg-blue);
+      box-shadow: 0 15px 35px rgba(0, 102, 204, 0.15);
+      background: #ffffff;
+    }
+
+    .badge-featured {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--hg-blue);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .plan-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--hg-navy);
+      margin-bottom: 6px;
+    }
+
+    .plan-desc {
+      font-size: 13px;
+      color: var(--hg-text-muted);
+      min-height: 40px;
+      margin-bottom: 18px;
+    }
+
+    .plan-discount-tag {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #059669;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .price-box {
+      margin-bottom: 24px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .current-price {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--hg-navy);
+      line-height: 1;
+      margin: 4px 0;
+    }
+
+    .current-price span.currency {
+      font-size: 20px;
+      vertical-align: top;
+      margin-right: 2px;
+    }
+
+    .current-price span.period {
+      font-size: 14px;
+      color: var(--hg-text-muted);
+      font-weight: 500;
+    }
+
+    .btn-plan {
+      background-color: var(--hg-yellow);
+      color: #001229;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 14px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s;
+      margin-bottom: 24px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-plan:hover {
+      background-color: var(--hg-yellow-hover);
+    }
+
+    .plan-card.featured .btn-plan {
+      background-color: var(--hg-blue);
+      color: #ffffff;
+    }
+
+    .plan-card.featured .btn-plan:hover {
+      background-color: #0052a3;
+    }
+
+    .plan-features-list {
+      list-style: none;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .plan-features-list li {
+      font-size: 13px;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .plan-features-list li svg {
+      width: 16px;
+      height: 16px;
+      fill: #10b981;
+      flex-shrink: 0;
+    }
+
+    .plan-features-list li strong {
+      color: #0f172a;
+    }
+
+    /* REASONS SECTION */
+    .reasons-section {
+      padding: 70px 24px;
+      background: #ffffff;
+    }
+
+    .reasons-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .reason-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .reason-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .reason-card h4 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--hg-navy);
+      margin-bottom: 8px;
+    }
+
+    .reason-card p {
+      font-size: 13px;
+      color: var(--hg-text-muted);
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #001229;
+      color: #94a3b8;
+      padding: 60px 24px 30px 24px;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h5 {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-col a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #64748b;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero h1 { font-size: 32px; }
+      .hero p.lead { margin: 0 auto 24px auto; }
+      .hero-features { text-align: left; }
+      .plans-grid { grid-template-columns: 1fr; }
+      .reasons-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-container { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .hero-features { grid-template-columns: 1fr; }
+      .domain-form { flex-direction: column; }
+      .reasons-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span class="tag">OFERTA DE PARCEIRO</span>
+    <span>🔥 1 ANO DE DOMÍNIO GRÁTIS + ATÉ 70% OFF LIBERADOS HOJE</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="logo-container">
+        <!-- SVG OFFICIAL LOGO HOSTGATOR -->
+        <svg class="logo-svg" viewBox="0 0 178 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.8 28.5V7.5H18.2V15.7H26.3V7.5H31.7V28.5H26.3V20.3H18.2V28.5H12.8ZM45.8 28.8C42.8 28.8 40.2 27.8 38.2 25.8C36.2 23.8 35.2 21.2 35.2 18C35.2 14.8 36.2 12.2 38.2 10.2C40.2 8.2 42.8 7.2 45.8 7.2C48.8 7.2 51.4 8.2 53.4 10.2C55.4 12.2 56.4 14.8 56.4 18C56.4 21.2 55.4 23.8 53.4 25.8C51.4 27.8 48.8 28.8 45.8 28.8ZM45.8 24.3C47.4 24.3 48.8 23.7 49.9 22.6C51 21.5 51.5 20 51.5 18C51.5 16 51 14.5 49.9 13.4C48.8 12.3 47.4 11.7 45.8 11.7C44.2 11.7 42.8 12.3 41.7 13.4C40.6 14.5 40.1 16 40.1 18C40.1 20 40.6 21.5 41.7 22.6C42.8 23.7 44.2 24.3 45.8 24.3ZM67.6 28.8C65.4 28.8 63.4 28.3 61.6 27.3C59.8 26.3 58.7 24.9 58.3 23.1L62.7 21.3C63.1 22.4 63.8 23.2 64.7 23.8C65.6 24.4 66.6 24.7 67.7 24.7C68.8 24.7 69.7 24.5 70.4 24.1C71.1 23.7 71.4 23.1 71.4 22.3C71.4 21.6 71.1 21.1 70.5 20.7C69.9 20.3 68.8 19.9 67.2 19.5C64.9 18.9 63.1 18.2 61.8 17.3C60.5 16.4 59.8 15.1 59.8 13.4C59.8 11.6 60.5 10.2 62 9.1C63.5 8 65.4 7.4 67.6 7.4C69.5 7.4 71.2 7.8 72.8 8.6C74.4 9.4 75.4 10.6 75.8 12.2L71.5 14C71.2 13.2 70.6 12.6 69.8 12.2C69 11.8 68.3 11.6 67.5 11.6C66.5 11.6 65.7 11.8 65.1 12.2C64.5 12.6 64.2 13.1 64.2 13.8C64.2 14.5 64.5 15 65.1 15.4C65.7 15.8 66.8 16.2 68.4 16.6C70.7 17.2 72.5 17.9 73.8 18.8C75.1 19.7 75.8 21 75.8 22.7C75.8 24.5 75.1 26 73.6 27.1C72.1 28.2 70.1 28.8 67.6 28.8ZM84.4 28.5V12.1H78.9V7.5H95.3V12.1H89.8V28.5H84.4ZM110.8 28.8C107.5 28.8 104.8 27.8 102.7 25.8C100.6 23.8 99.6 21.2 99.6 18C99.6 14.8 100.6 12.2 102.7 10.2C104.8 8.2 107.5 7.2 110.8 7.2C113.8 7.2 116.3 8.1 118.2 9.8C120.1 11.5 121.2 13.7 121.5 16.4H116.9C116.6 15 115.9 13.9 114.9 13.1C113.9 12.3 112.5 11.9 110.8 11.9C109.1 11.9 107.7 12.5 106.6 13.6C105.5 14.7 104.9 16.2 104.9 18C104.9 19.8 105.5 21.3 106.6 22.4C107.7 23.5 109.1 24.1 110.8 24.1C112.5 24.1 113.9 23.7 114.9 22.9C115.9 22.1 116.6 21 116.9 19.6H110.5V15.5H121.8V28.5H117.5L117.1 26C115.4 27.9 113.3 28.8 110.8 28.8ZM132.5 28.5L131.6 25.3H124.9L124 28.5H118.5L125.4 7.5H131.1L138 28.5H132.5ZM128.2 13.5L126.1 21H130.4L128.2 13.5ZM146.4 28.5V12.1H140.9V7.5H157.3V12.1H151.8V28.5H146.4ZM167.8 28.8C164.8 28.8 162.2 27.8 160.2 25.8C158.2 23.8 157.2 21.2 157.2 18C157.2 14.8 158.2 12.2 160.2 10.2C162.2 8.2 164.8 7.2 167.8 7.2C170.8 7.2 173.4 8.2 175.4 10.2C177.4 12.2 178.4 14.8 178.4 18C178.4 21.2 177.4 23.8 175.4 25.8C173.4 27.8 170.8 28.8 167.8 28.8ZM167.8 24.3C169.4 24.3 170.8 23.7 171.9 22.6C173 21.5 173.5 20 173.5 18C173.5 16 173 14.5 171.9 13.4C170.8 12.3 169.4 11.7 167.8 11.7C166.2 11.7 164.8 12.3 163.7 13.4C162.6 14.5 162.1 16 162.1 18C162.1 20 162.6 21.5 163.7 22.6C164.8 23.7 166.2 24.3 167.8 24.3Z" fill="#ffc72c"/>
+          <path d="M5.5 10C5.5 7.5 7.5 5.5 10 5.5C12.5 5.5 14.5 7.5 14.5 10C14.5 12.5 12.5 14.5 10 14.5C7.5 14.5 5.5 12.5 5.5 10Z" fill="#38bdf8"/>
+        </svg>
+        <span class="partner-badge">Parceiro Oficial</span>
+      </a>
+
+      <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="nav-cta">
+        Resgatar 70% OFF →
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div>
+        <div class="hero-badge-pill">
+          <span>⚡ Voucher VIP Ativado</span> • <span>1 Ano de Domínio Grátis</span>
+        </div>
+        <h1>
+          Sua ideia no ar.<br>
+          Sua marca com <span class="highlight">Domínio Grátis</span> e até <span class="highlight">70% OFF</span>.
+        </h1>
+        <p class="lead">
+          Coloque seu site profissional no ar em minutos com a líder em hospedagem cPanel da América Latina. E-mails corporativos ilimitados, instalador WordPress em 1 clique e suporte 24h.
+        </p>
+
+        <div class="hero-features">
+          <div class="feature-item">
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Domínio .com ou .com.br Grátis</span>
+          </div>
+          <div class="feature-item">
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>E-mails Profissionais Ilimitados</span>
+          </div>
+          <div class="feature-item">
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Certificado SSL Grátis Incluso</span>
+          </div>
+          <div class="feature-item">
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Painel cPanel + Criador com IA</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="btn-main-hero">
+            Resgatar Domínio Grátis + 70% OFF Oficial →
+          </a>
+          <div class="hero-subtext">
+            <span>🛡️ Garantia de 30 dias</span>
+            <span>⚡ Ativação imediata</span>
+            <span>💳 Sem fidelidade presa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="https://www.hostgator.com.br/assets/images/allpass/snappy-2.avif" alt="Snappy HostGator" class="snappy-mascot" onerror="this.src='https://www.hostgator.com.br/assets/images/home/redesigned-home/allpass-hero-home.avif'">
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAIN SEARCH SECTION -->
+  <section class="domain-search-section">
+    <div class="domain-card">
+      <h3>
+        <svg width="20" height="20" fill="#0066cc" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        Verifique a disponibilidade do seu domínio oficial (.com ou .com.br):
+      </h3>
+      <form class="domain-form" onsubmit="event.preventDefault(); window.open('https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt', '_blank');">
+        <input type="text" class="domain-input" placeholder="Digite o nome da sua empresa (ex: suaempresa.com.br)" required>
+        <button type="submit" class="btn-search">Garantir Domínio Grátis →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PRICING & PLANS -->
+  <section class="plans-section" id="planos">
+    <div class="section-header">
+      <h2>Escolha o Plano Ideal para a sua Presença Web</h2>
+      <p>Todos os planos incluem 1 ano de domínio grátis, e-mails corporativos e desconto exclusivo aplicado automaticamente.</p>
+    </div>
+
+    <div class="plans-grid">
+      
+      <!-- PLANO P -->
+      <div class="plan-card">
+        <h3 class="plan-title">Plano P</h3>
+        <p class="plan-desc">Perfeito para quem está criando o primeiro site pessoal ou institucional.</p>
+        
+        <div>
+          <span class="plan-discount-tag">Economize até 70%</span>
+        </div>
+        <div class="price-box">
+          <div class="old-price">De R$ 29,90/mês</div>
+          <div class="current-price">
+            <span class="currency">R$</span>9,89<span class="period">/mês*</span>
+          </div>
+        </div>
+
+        <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="btn-plan">
+          Contratar Plano P →
+        </a>
+
+        <ul class="plan-features-list">
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>1 Ano de Domínio Grátis</strong> (.com ou .com.br)</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>Hospeda 1 site</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Contas de e-mail <strong>ilimitadas</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>100 GB de armazenamento SSD</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Certificado SSL Gratuito</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Painel cPanel + WordPress 1 clique</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PLANO M (DESTAQUE) -->
+      <div class="plan-card featured">
+        <span class="badge-featured">⭐ O Mais Vendido</span>
+        <h3 class="plan-title">Plano M</h3>
+        <p class="plan-desc">Ideal para empresas e profissionais que precisam de múltiplos sites e marcas.</p>
+        
+        <div>
+          <span class="plan-discount-tag">Melhor Custo-Benefício</span>
+        </div>
+        <div class="price-box">
+          <div class="old-price">De R$ 38,90/mês</div>
+          <div class="current-price">
+            <span class="currency">R$</span>13,89<span class="period">/mês*</span>
+          </div>
+        </div>
+
+        <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="btn-plan">
+          Contratar Plano M (Recomendado) →
+        </a>
+
+        <ul class="plan-features-list">
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>1 Ano de Domínio Grátis</strong> (.com ou .com.br)</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>Sites Ilimitados</strong> na mesma conta</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Contas de e-mail <strong>ilimitadas</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>100 GB de armazenamento SSD</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>SSL Gratuito para todos os sites</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Painel cPanel + Criador de Sites com IA</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PLANO TURBO -->
+      <div class="plan-card">
+        <h3 class="plan-title">Plano Turbo</h3>
+        <p class="plan-desc">Máxima velocidade e desempenho para lojas virtuais e tráfego pesado.</p>
+        
+        <div>
+          <span class="plan-discount-tag">2.5x Mais Rápido</span>
+        </div>
+        <div class="price-box">
+          <div class="old-price">De R$ 69,90/mês</div>
+          <div class="current-price">
+            <span class="currency">R$</span>22,89<span class="period">/mês*</span>
+          </div>
+        </div>
+
+        <a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank" class="btn-plan">
+          Contratar Plano Turbo →
+        </a>
+
+        <ul class="plan-features-list">
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>1 Ano de Domínio Grátis</strong> (.com ou .com.br)</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>Sites Ilimitados</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span><strong>150 GB de SSD NVMe Ultraveloz</strong></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>2.5x Mais Poder de Processamento</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Otimizado para WooCommerce e E-commerce</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST & REASONS -->
+  <section class="reasons-section">
+    <div class="reasons-grid">
+      <div class="reason-card">
+        <div class="reason-icon">⚡</div>
+        <h4>99.9% de Disponibilidade</h4>
+        <p>Seu site 24 horas no ar com servidores de ponta e redundância internacional.</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">💬</div>
+        <h4>Suporte 24/7/365</h4>
+        <p>Atendimento humanizado em português a qualquer hora via chat e tickets.</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">🔒</div>
+        <h4>SSL Grátis Ilimitado</h4>
+        <p>O cadeado verde de segurança obrigatório pelo Google já instalado em minutos.</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">🚀</div>
+        <h4>WordPress em 1 Clique</h4>
+        <p>Instalação automática do CMS mais usado do planeta com painel cPanel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h5 style="color:#ffc72c;">HostGator Brasil • Programa Oficial de Parceria</h5>
+        <p style="margin-bottom:14px; max-width:400px; line-height:1.6;">
+          Esta página é uma oferta especial de parceria e indicação oficial HostGator. Todos os descontos de até 70% e o benefício de 1 ano de domínio grátis são aplicados diretamente no carrinho oficial da HostGator.
+        </p>
+        <p style="font-size:11px; color:#64748b;">
+          *Valores promocionais válidos para novos ciclos e contratações através deste link de indicação oficial.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Hospedagem de Sites</a></li>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Registro de Domínios</a></li>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Criador de Sites com IA</a></li>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">E-mail Profissional Titan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Segurança &amp; Termos</h5>
+        <ul>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Políticas de Privacidade</a></li>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Termos de Serviço</a></li>
+          <li><a href="https://indique-um-amigo.hostgator.com.br/rgoes3!bc46fe71ae!a?locale=pt" target="_blank">Certificado SSL Seguro</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        © 2026 HostGator Brasil • Todos os direitos reservados.
+      </div>
+      <div>
+        HostGator / Newfold Digital Company • Parceria e Indicação Autorizada
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
